@@ -1,0 +1,149 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #1a1a1a;
+
+  /* Background logo (watermark) */
+  background: url("logo.png") no-repeat center center fixed;
+  background-size: 550px;          /* Adjust size here */
+  opacity: 0.98;                   /* Keeps everything readable */
+}
+
+/* HEADER */
+.main-header {
+  background: #2d0e74;             /* Deep purple (matches your logo) */
+  padding: 20px 0;
+  border-bottom: 4px solid #e2e2e2;
+}
+
+.header-content {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.school-logo {
+  height: 90px;                    /* Logo height */
+  width: auto;
+}
+
+.school-name {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* PAGE CONTENT */
+.content-area {
+  width: 90%;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.content-area h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: #2d0e74;
+}
+/* Reset-ish */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root{
+  --green: #19075a;
+  --dark-green: #070958;
+  --nav-green: #080755;
+  --muted: #666;
+  --max-width: 1150px;
+  --container-pad: 20px;
+  --card-border: #ddd;
+}
+html,body{ height:100%; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:#222; background:#fff; line-height:1.45; }
+.container{ max-width: var(--max-width); margin: 0 auto; padding: 18px var(--container-pad); }
+
+/* Top info bar */
+.topbar{ background: var(--nav-green); color: #fff; font-size:14px; }
+.topbar-inner{ display:flex; justify-content:space-between; align-items:center; padding:10px var(--container-pad); }
+.topbar a{ color:#e6f3e9; margin-right:12px; text-decoration:none; }
+.lang{ background:transparent; border:0; color:#fff; font-weight:600; cursor:pointer; }
+
+/* Header */
+.site-header{ border-bottom:1px solid #eee; background:#fff; }
+.header-inner{ display:flex; align-items:center; justify-content:space-between; padding:18px 0; }
+.branding{ display:flex; gap:12px; align-items:center; }
+.logo{ width:140px; height:auto; display:block; }
+.brand-text .org{ font-family: "Merriweather", serif; font-weight:700; color:#0b3b19; }
+.brand-text .location{ font-size:12px; color:var(--muted); }
+
+/* Main nav */
+.main-nav ul{ list-style:none; display:flex; gap:18px; align-items:center; margin:0; }
+.main-nav a{ color:#123; text-decoration:none; font-weight:600; }
+.menu-btn{ background:var(--green); color:#fff; border:0; padding:8px 12px; border-radius:4px; cursor:pointer; }
+
+/* Breadcrumb */
+.breadcrumb{ color:var(--muted); font-size:14px; padding:12px var(--container-pad); }
+
+/* Layout: two-column responsive */
+.main-grid{ display:grid; grid-template-columns: 1fr 320px; gap:24px; align-items:start; padding-bottom:40px; }
+
+/* Content area */
+.content h1{ font-family: "Merriweather", serif; color:#123; margin-bottom:8px; font-size:28px; }
+.lead{ color:var(--muted); margin-bottom:22px; }
+
+/* Cards grid */
+.cards-grid{ display:grid; grid-template-columns: 1fr 1fr; gap:18px; margin-top:18px; }
+.card{
+  border:1px solid var(--card-border);
+  padding:26px;
+  min-height:170px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  background:#fff;
+}
+.card-icon{ width:64px; height:64px; border-radius:50%; display:flex; align-items:center; justify-content:center; background:#f4fff4; }
+.card h2{ font-size:20px; color:#16224a; font-family:"Merriweather", serif; }
+.card .muted{ color:var(--muted); font-size:14px; }
+.card-cta{ margin-top:auto; text-decoration:none; font-weight:600; color:var(--green); }
+
+/* Sidebar */
+.sidebar{ }
+.contact-box{
+  background: var(--green);
+  color:#fff;
+  padding:20px;
+  border-radius:2px;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.06);
+}
+.contact-box h3{ margin-bottom:8px; font-size:18px; }
+.contact-box hr{ border:none; height:3px; background: rgba(255,255,255,0.15); margin:12px 0 14px; width:60%; }
+.contact-box p{ margin-bottom:12px; }
+.contact-box .small{ font-size:13px; opacity:0.95; }
+.contact-btn{ display:inline-block; padding:8px 12px; background:transparent; border:1px solid rgba(255,255,255,0.2); color:#fff; text-decoration:none; border-radius:4px; }
+
+/* Footer */
+.site-footer{ border-top:1px solid #eee; background:#fafafa; padding:12px 0; font-size:13px; color:var(--muted); }
+
+/* Responsive */
+@media (max-width: 980px){
+  .main-grid{ grid-template-columns: 1fr; }
+  .cards-grid{ grid-template-columns: 1fr; }
+  .main-grid .sidebar{ order: 2; }
+  .header-inner{ flex-direction:column; gap:14px; align-items:flex-start; }
+}
+
+
+
+
+
